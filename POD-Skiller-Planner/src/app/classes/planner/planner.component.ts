@@ -165,7 +165,6 @@ export class PlannerComponent implements OnInit {
     reqlevelElement.style.color = "ivory";
     parent?.appendChild(reqlevelElement);
 
-    
     let element = document.createElement("button");
     const that = this;
 
