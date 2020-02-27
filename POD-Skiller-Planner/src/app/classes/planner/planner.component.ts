@@ -137,9 +137,10 @@ export class PlannerComponent implements OnInit {
         element.style.zIndex = "1";
         element.id=temp;
         element.style.position = "relative";
-        element.style.fontSize = "20px";
+        element.style.fontSize = "16px";
+        element.style.marginBottom = "10px";
         element.style.color = "ivory";
-        element.style.height = "80px";
+        element.style.height = "65px";
         element.style.borderRadius = "4px";
         const that = this;
 
