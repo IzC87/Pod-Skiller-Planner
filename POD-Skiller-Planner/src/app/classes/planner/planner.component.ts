@@ -26,14 +26,14 @@ export class PlannerComponent implements OnInit {
     this.BuildSkillTrees();
 
     this.router.events.subscribe(event =>{
-        if (event instanceof NavigationEnd){
-          this.routerChangeMethod(event.url);
-        }
-      })
-      let id = this.route.snapshot.paramMap.get('id');
-      if (id){
-        this.PopulateTrees(id.toString())
+      if (event instanceof NavigationEnd){
+        this.routerChangeMethod(event.url);
       }
+      })
+    let id = this.route.snapshot.paramMap.get('id');
+    if (id){
+      this.PopulateTrees(id.toString())
+    }
   }
 
   routerChangeMethod(url: string){
@@ -41,6 +41,7 @@ export class PlannerComponent implements OnInit {
     if (id){
       this.PopulateTrees(id.toString());
       this.ShowNotifications();
+      this.UpdateRequiredLevel();
     }
   }
 
@@ -156,7 +157,7 @@ export class PlannerComponent implements OnInit {
     let parent = document.getElementById("selectedskill");
 
     let reqlevelElement = document.createElement("div");
-    reqlevelElement.textContent = "Total Required level: ";
+    reqlevelElement.textContent = "Total Required level: 1";
     reqlevelElement.className = "totalRequiredLevelText";
     reqlevelElement.style.fontSize = "20px";
     reqlevelElement.style.position = "absolute";
@@ -196,7 +197,7 @@ export class PlannerComponent implements OnInit {
       let skilladded = this.AddToSelectedSkill(spellId, addValue);
       if (skilladded)
       {
-        if (button == 0) { this.AddPrerequisiteSkills(spellId, spellId); }
+        if (button == 0) { this.AddPrerequisiteSkills(spellId); }
         this.UpdateNotification(skilladded);
       }
     }
@@ -204,6 +205,7 @@ export class PlannerComponent implements OnInit {
     this.MarkClickedSkill(e.srcElement.className);
     this.MarkPrerequisite(spellhandle.prereq);
     this.UpdateSelectedSkillInfo(spellhandle)
+    this.UpdateRequiredLevel();
   }
 
   UpdateSelectedSkillInfo(spellHandle: any)
@@ -218,53 +220,55 @@ export class PlannerComponent implements OnInit {
     $(".ssdesc").html(spellHandle.desc);
   }
 
-  AddPrerequisiteSkills(spellId: any, originalSpellId?: any)
+  AddPrerequisiteSkills(spellId: any)
   {
-    if (spellId)
+    if (!spellId) { return; }
+    for (let x = 0; x < spellId.length; x += 2)
     {
-      for (let x = 0; x < spellId.length; x += 2)
+      let singlePrerequisite = spellId.slice(x, x+2);
+      let addedSkillHandle = this.GetAddedSkillHandle(singlePrerequisite)
+      if (addedSkillHandle)
       {
-        let singlePrerequisite = spellId.slice(x, x+2);
-        let prerequisiteSkillHandle = this.GetSpellHandleById(singlePrerequisite);
+        if (addedSkillHandle.level < 1)
+        {
+          let skillAdded = this.AddToSelectedSkill(singlePrerequisite, 1);
+          this.UpdateNotification(skillAdded);
+        }
+      }
+      else
+      {
+        this.skillSelected.push({ id: singlePrerequisite, level: 1});
+        this.UpdateNotification(this.skillSelected[this.skillSelected.length-1]);
+      }
 
-        let checkSpellFound = false;
-
-        for (let index in this.skillSelected)
-        {
-          if (this.skillSelected[index].id == singlePrerequisite)
-          {
-            checkSpellFound = true;
-            if (this.skillSelected[index].level < 1)
-            {
-              if (!originalSpellId && prerequisiteSkillHandle)
-              {
-                let skilladded = this.AddToSelectedSkill(singlePrerequisite, 1);
-                this.UpdateNotification(skilladded);
-              }
-            }
-          }
-        }
-        if (!checkSpellFound)
-        {
-          this.skillSelected.push({ id: singlePrerequisite, level: 1});
-          this.UpdateNotification(this.skillSelected[this.skillSelected.length-1]);
-        }
-        
-        if (prerequisiteSkillHandle)
-        {
-          this.AddPrerequisiteSkills(prerequisiteSkillHandle.prereq);
-        }
+      
+      let prerequisiteSkillHandle = this.GetSpellHandleById(singlePrerequisite);
+      if (prerequisiteSkillHandle)
+      {
+        this.AddPrerequisiteSkills(prerequisiteSkillHandle.prereq);
       }
     }
   }
 
+  GetAddedSkillHandle(spellId: string)
+  {
+    for (let index in this.skillSelected)
+    {
+      if (this.skillSelected[index].id == spellId)
+      {
+        return this.skillSelected[index];
+      }
+    }
+    return null
+  }
+
   MarkClickedSkill(buttonId: string)
   {
-    this.UnmarkSkills(buttonId);
+    this.UnmarkSkills();
     $("." + buttonId).css("border", this.markedSkillborder)
   }
 
-  UnmarkSkills(buttonId: string)
+  UnmarkSkills()
   {
     $('[style*="border: ' + this.markedSkillborder + '"]').css("border", this.unmarkedSkillBorder)
     $('[style*="border: ' + this.requiredSkillBorder + '"]').css("border", this.unmarkedSkillBorder)
@@ -308,6 +312,7 @@ export class PlannerComponent implements OnInit {
         this.UpdateNotification(this.skillSelected[index]);
       }
     }
+    this.UpdateRequiredLevel();
   }
 
   UpdateNotification(nHandle: any)
@@ -323,33 +328,61 @@ export class PlannerComponent implements OnInit {
     }
   }
 
-  AddToSelectedSkill(sid: string, addValue: number): any
+  UpdateRequiredLevel()
   {
-    for (let index in this.skillSelected)
+    let requiredLevel = this.GetTotalRequiredLevel();
+    $(".totalRequiredLevelText").text("Total required level: " + requiredLevel);
+  }
+
+  GetTotalRequiredLevel(): number
+  {
+    let currentClassName = this.router.url.replace("/planner/", "");
+    let classIdentifier = [];
+
+    let currentClassArray = this.GetCurrentClass(currentClassName);
+    for (let index in currentClassArray.tree)
     {
-      if (this.skillSelected[index].id == sid)
+      let identifier = currentClassArray.tree[index].spell[0].id;
+      classIdentifier.push(identifier.replace("1", ""));
+    }
+
+    let requiredLevel = -11;
+    for (let skill in this.skillSelected)
+    {
+      let skillId = this.skillSelected[skill].id.charAt(0);
+      for (let index in classIdentifier)
       {
-        this.skillSelected[index].level += addValue;
-        if (this.skillSelected[index].level > 19)
+        if (skillId == classIdentifier[index])
         {
-          this.skillSelected[index].level = 20;
+          requiredLevel += this.skillSelected[skill].level;
         }
-        else if (this.skillSelected[index].level < 1)
-        {
-          this.skillSelected[index].level = 0;
-        }
-        return this.skillSelected[index];
       }
     }
-    if (addValue < 0)
+    if (requiredLevel < 1 ) { requiredLevel = 1 }
+    return requiredLevel;
+  }
+
+  AddToSelectedSkill(sid: string, addValue: number): any
+  {
+    let addedSkill = this.GetAddedSkillHandle(sid);
+    if (addedSkill)
     {
-      this.skillSelected.push({ id: sid, level: 0});
+      addedSkill.level += addValue;
     }
     else
     {
       this.skillSelected.push({ id: sid, level: addValue});
+      addedSkill = this.skillSelected[this.skillSelected.length-1];
     }
-    return this.skillSelected[this.skillSelected.length-1];
+    if (addedSkill.level > 19)
+    {
+      addedSkill.level = 20;
+    }
+    else if (addedSkill.level < 1)
+    {
+      addedSkill.level = 0;
+    }
+    return addedSkill;
   }
 
   GetSpellNamesById(sid: string): string
