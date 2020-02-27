@@ -1,0 +1,2059 @@
+[
+    {
+        "name"  : "Amazon",
+        "tree"  : [
+            {
+                "name"  : "Javelin and Spear Skills",
+                "spell": [
+                    {
+                        "name"      : "Jab",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "01",
+                        "desc"      : "Attacks with a series of rapid thrusts using a javelin or spear class weapon.",
+                        "synergies" : "0",
+                        "position" : 1
+                    },
+                    {
+                        "name"      : "Power Strike",
+                        "levelreq"  : 6,
+                        "prereq"    : "01",
+                        "id"        : "02",
+                        "desc"      : "Adds lightning damage to attacks with javelin and spear class weapons.",
+                        "synergies" : "0609",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Poison Javelin",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "03",
+                        "desc"      : "Magically enhances your javelin to leave a trail of poison clouds.",
+                        "synergies" : "07",
+                        "position" : 3
+                    },
+                    {
+                        "name"      : "Fend",
+                        "levelreq"  : 12,
+                        "prereq"    : "01",
+                        "id"        : "04",
+                        "desc"      : "Attacks all adjacent targets.",
+                        "synergies" : "0",
+                        "position" : 1
+                    },
+                    {
+                        "name"      : "Lightning Bolt",
+                        "levelreq"  : 12,
+                        "prereq"    : "0203",
+                        "id"        : "05",
+                        "desc"      : "Magically converts your javelin into a bolt of lightning.",
+                        "synergies" : "020A",
+                        "position" : 3
+                    },
+                    {
+                        "name"      : "Charged Strike",
+                        "levelreq"  : 18,
+                        "prereq"    : "02",
+                        "id"        : "06",
+                        "desc"      : "Adds lightning damage to javelin and spear class weapons and releases charged bolts upon impact.",
+                        "synergies" : "0209",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Plague Javelin",
+                        "levelreq"  : 18,
+                        "prereq"    : "05",
+                        "id"        : "07",
+                        "desc"      : "Magically enhances your javelin to release expanding clouds of poison upon impact.",
+                        "synergies" : "03",
+                        "position" : 3
+                    },
+                    {
+                        "name"      : "Ground Slam",
+                        "levelreq"  : 24,
+                        "prereq"    : "04",
+                        "id"        : "08",
+                        "desc"      : "Forcefully drive your spear into the earth creating three exploding fissures on impact.",
+                        "synergies" : "0",
+                        "position" : 1
+                    },
+                    {
+                        "name"      : "Lightning Strike",
+                        "levelreq"  : 30,
+                        "prereq"    : "06",
+                        "id"        : "09",
+                        "desc"      : "Adds lightning damage to javelin and spear class weapons and releases chain lightning upon impact.",
+                        "synergies" : "0602",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Lightning Fury",
+                        "levelreq"  : 30,
+                        "prereq"    : "07",
+                        "id"        : "0A",
+                        "desc"      : "Changes a thrown javelin into a powerful bolt of lightning that splits on impact.",
+                        "synergies" : "05",
+                        "position" : 3
+                    }
+                ]
+            },
+            {
+                "name" : "Passive and Magic Skills",
+                "spell": [
+                    {
+                        "name"      : "Inner Sight",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "A1",
+                        "desc"      : "Passive - Illuminates nearby enemies making them easier to hit for you and your party.",
+                        "synergies" : "0",
+                        "position" : 1
+                    },
+                    {
+                        "name"      : "Lethal Strike",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "A2",
+                        "desc"      : "Passive - Your attacks have a chance to do double damage.",
+                        "synergies" : "0",
+                        "position" : 3
+                    },
+                    {
+                        "name"      : "Phase Run",
+                        "levelreq"  : 6,
+                        "prereq"    : "A1",
+                        "id"        : "A3",
+                        "desc"      : "Transcend to a heighten state, granting faster movement and recovery.",
+                        "synergies" : "0",
+                        "position" : 1
+                    },
+                    {
+                        "name"      : "Dodge",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "A4",
+                        "desc"      : "Passive - You have a chance to dodge a melee attack when attacking or standing still.",
+                        "synergies" : "0",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Avoid",
+                        "levelreq"  : 12,
+                        "prereq"    : null,
+                        "id"        : "A5",
+                        "desc"      : "Passive - You have a chance to dodge enemy missiles when attacking or standing still.",
+                        "synergies" : "0",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Penetrate",
+                        "levelreq"  : 12,
+                        "prereq"    : "A2",
+                        "id"        : "A6",
+                        "desc"      : "Passive - Increases your attack rating.",
+                        "synergies" : "0",
+                        "position" : 3
+                    },
+                    {
+                        "name"      : "Evade",
+                        "levelreq"  : 18,
+                        "prereq"    : null,
+                        "id"        : "A7",
+                        "desc"      : "Passive - You have a chance to dodge a melee or missile attack when walking or running.",
+                        "synergies" : "0",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Decoy",
+                        "levelreq"  : 24,
+                        "prereq"    : "A3",
+                        "id"        : "A8",
+                        "desc"      : "Creates a stationary duplicate of yourself that draws fire from enemies and shoots arrows.",
+                        "synergies" : "0",
+                        "position" : 1
+                    },
+                    {
+                        "name"      : "Valkyrie",
+                        "levelreq"  : 30,
+                        "prereq"    : "A8",
+                        "id"        : "A9",
+                        "desc"      : "Summons a powerful Valkyrie ally.",
+                        "synergies" : "010209",
+                        "position" : 1
+                    },
+                    {
+                        "name"      : "Pierce",
+                        "levelreq"  : 30,
+                        "prereq"    : "A6",
+                        "id"        : "AA",
+                        "desc"      : "Passive - Your missiles have a chance to pass through enemies that they hit.",
+                        "synergies" : "0",
+                        "position" : 3
+                    }
+                ]
+            },
+            {
+                "name"  : "Bow and Crossbow Skills",
+                "spell" : [
+                    {
+                        "name"      : "Cold Arrow",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "B1",
+                        "desc"      : "Magically enhances your arrows or bolts by adding cold damage and a slowing effect.",
+                        "synergies" : "B5",
+                        "position" : 1
+                    },
+                    {
+                        "name"      : "Magic Arrow",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "B2",
+                        "desc"      : "Creates a magical arrow or bolt that does extra damage.",
+                        "synergies" : "0",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Multiple Shot",
+                        "levelreq"  : 6,
+                        "prereq"    : "B2",
+                        "id"        : "B3",
+                        "desc"      : "Magically splits one arrow or bolt into many.",
+                        "synergies" : "0",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Fire Arrow",
+                        "levelreq"  : 6,
+                        "prereq"    : "B2",
+                        "id"        : "B4",
+                        "desc"      : "Magically enhances your arrows or bolts with fire, which leaves a burning trail behind it.",
+                        "synergies" : "B7",
+                        "position" : 3
+                    },
+                    {
+                        "name"      : "Ice Arrow",
+                        "levelreq"  : 18,
+                        "prereq"    : "B1",
+                        "id"        : "B5",
+                        "desc"      : "Magically enhances your arrow or bolt to freeze your enemies.",
+                        "synergies" : "B1BA",
+                        "position" : 1
+                    },
+                    {
+                        "name"      : "Guided Arrow",
+                        "levelreq"  : 18,
+                        "prereq"    : "B1B3",
+                        "id"        : "B6",
+                        "desc"      : "Enhances your arrows and bolts to track your target or seek one of its own.",
+                        "synergies" : "0",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Exploding Arrow",
+                        "levelreq"  : 18,
+                        "prereq"    : "B4",
+                        "id"        : "B7",
+                        "desc"      : "Enchants an arrow or bolt that explodes on contact, damaging all nearby enemies.",
+                        "synergies" : "B2B4",
+                        "position" : 3
+                    },
+                    {
+                        "name"      : "Strafe",
+                        "levelreq"  : 24,
+                        "prereq"    : "B6",
+                        "id"        : "B8",
+                        "desc"      : "Magically splits one arrow into several that target multiple nearby enemies.",
+                        "synergies" : "0",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Immolation Arrow",
+                        "levelreq"  : 24,
+                        "prereq"    : "B7",
+                        "id"        : "B9",
+                        "desc"      : "Enhances arrows or bolts to cause severe fire damage and creates a pyre upon impact.",
+                        "synergies" : "B4B7",
+                        "position" : 3
+                    },
+                    {
+                        "name"      : "Freezing Arrow",
+                        "levelreq"  : 30,
+                        "prereq"    : "B5",
+                        "id"        : "BA",
+                        "desc"      : "Magically enhances an arrow or bolt to freeze entire groups of monsters.",
+                        "synergies" : "B1B5",
+                        "position" : 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name"  : "Assassin",
+        "tree"  : [
+            {
+                "name"  : "Martial Arts",
+                "spell": [
+                    {
+                        "name"      : "Dual Strike",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "C1",
+                        "desc"      : "Slice and dice your enemies with your dual claw-class weapons.",
+                        "synergies" : "D1D5",
+                        "position" : 2
+                    },
+                    {
+                        "name"      : "Fists of Ember",
+                        "levelreq"  : 6,
+                        "prereq"    : "C1",
+                        "id"        : "C2",
+                        "desc"      : "Charge-up attack which adds fire damage to your hits.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Fists of Thunder",
+                        "levelreq"  : 6,
+                        "prereq"    : "C1",
+                        "id"        : "C3",
+                        "desc"      : "Charge-up attack which adds lightning damage to your fists.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Fists of Ice",
+                        "levelreq"  : 6,
+                        "prereq"    : "C1",
+                        "id"        : "C4",
+                        "desc"      : "Charge-up attack which adds cold damage to your hits.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Static Strike",
+                        "levelreq"  : 12,
+                        "prereq"    : "C3",
+                        "id"        : "C5",
+                        "desc"      : "Electrifies your attack and releases a static discharge.",
+                        "synergies" : "E2",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Dragon Talon",
+                        "levelreq"  : 18,
+                        "prereq"    : null,
+                        "id"        : "C6",
+                        "desc"      : "Triple kick your enemies with deadly accuracy.",
+                        "synergies" : "C8",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Emberstorm",
+                        "levelreq"  : 24,
+                        "prereq"    : "C2",
+                        "id"        : "C7",
+                        "desc"      : "Flaming bolts rain down and explode on impact.",
+                        "synergies" : "E1",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Dragon Flight",
+                        "levelreq"  : 24,
+                        "prereq"    : "C6",
+                        "id"        : "C8",
+                        "desc"      : "Perform a teleporting kick attack that deals damage to enemies near your target.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Blades of Ice",
+                        "levelreq"  : 30,
+                        "prereq"    : "C4",
+                        "id"        : "C9",
+                        "desc"      : "Create a flurry of ice shards which seek out nearby enemies.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    }
+                ]
+            },
+            {
+                "name" : "Shadow Disciplines",
+                "spell": [
+                    {
+                        "name"      : "Claw Mastery",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "D1",
+                        "desc"      : "Passive - Improves your skill with claw-class weapons.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Psychic Hammer",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "D2",
+                        "desc"      : "Use the power of your mind to create a psychic blast to crush and knock back your enemies.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Burst of Speed",
+                        "levelreq"  : 6,
+                        "prereq"    : "D1",
+                        "id"        : "D3",
+                        "desc"      : "Increases attack and movement speed for a period of time.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Mind Barrier",
+                        "levelreq"  : 6,
+                        "prereq"    : "D2",
+                        "id"        : "D4",
+                        "desc"      : "Create a mental barrier around yourself that disarms enemies",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Weapon Block",
+                        "levelreq"  : 12,
+                        "prereq"    : "D1",
+                        "id"        : "D5",
+                        "desc"      : "Passive - Chance to block when you are using dual claw-class weapons.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Cloak of Shadows",
+                        "levelreq"  : 12,
+                        "prereq"    : "D4",
+                        "id"        : "D6",
+                        "desc"      : "Cast a shadow to blind nearby enemies lowering their defenses for a period of time.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Fade",
+                        "levelreq"  : 18,
+                        "prereq"    : "D3",
+                        "id"        : "D7",
+                        "desc"      : "Raise all resistances and resist curses for a period of time.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Shadow Warrior",
+                        "levelreq"  : 18,
+                        "prereq"    : "D6D5",
+                        "id"        : "D8",
+                        "desc"      : "Summon a shadow of yourself that mimics your skills and fights by your side.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Mind Blast",
+                        "levelreq"  : 24,
+                        "prereq"    : "D6",
+                        "id"        : "D9",
+                        "desc"      : "Using the power of your mind stun a group of enemies.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Venom",
+                        "levelreq"  : 30,
+                        "prereq"    : "D7",
+                        "id"        : "DA",
+                        "desc"      : "Adds poison damage to your weapons. When active, Poison damage delivered by your weapon always lasts for 0.4 seconds",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Shadow Master",
+                        "levelreq"  : 30,
+                        "prereq"    : "D8",
+                        "id"        : "DB",
+                        "desc"      : "Summon a powerful shadow of yourself to fight by your side.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    }
+                ]
+            },
+            {
+                "name" : "Traps",
+                "spell": [
+                    {
+                        "name"      : "Fire Blast",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "E1",
+                        "desc"      : "Throw a fire bomb to blast your enemies to bits.",
+                        "synergies" : "E2E4E5E7E8E9",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Shock Web",
+                        "levelreq"  : 6,
+                        "prereq"    : "E1",
+                        "id"        : "E2",
+                        "desc"      : "Throw a web of lightning to shock your enemies.",
+                        "synergies" : "E1E4E7E9",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Blade Throw",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "E3",
+                        "desc"      : "Set a spinning blade to patrol between you and target point.",
+                        "synergies" : "E6EA",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Charged Bolt Sentry",
+                        "levelreq"  : 12,
+                        "prereq"    : "E2",
+                        "id"        : "E4",
+                        "desc"      : "A trap that emits charged bolts at enemies that pass near.",
+                        "synergies" : "E2E1E7E9",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Wake of Fire",
+                        "levelreq"  : 12,
+                        "prereq"    : "E1",
+                        "id"        : "E5",
+                        "desc"      : "A trap that emits waves of fire.",
+                        "synergies" : "E1E8",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Blade Fury",
+                        "levelreq"  : 18,
+                        "prereq"    : "E5E3",
+                        "id"        : "E6",
+                        "desc"      : "Throw spinning blades to slice up your enemies.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Lightning Sentry",
+                        "levelreq"  : 24,
+                        "prereq"    : "E4",
+                        "id"        : "E7",
+                        "desc"      : "A trap that shoots lightning to scorch passing enemies.",
+                        "synergies" : "E9E4E2",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Wake of Inferno",
+                        "levelreq"  : 24,
+                        "prereq"    : "E5",
+                        "id"        : "E8",
+                        "desc"      : "Trap that sprays fire at passing enemies.",
+                        "synergies" : "E5E1E9",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Death Sentry",
+                        "levelreq"  : 30,
+                        "prereq"    : "E7",
+                        "id"        : "E9",
+                        "desc"      : "Trap that shoots lightning at your enemies or explodes nearby corpses laying waste to more enemies.",
+                        "synergies" : "E1E7",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Blade Shield",
+                        "levelreq"  : 30,
+                        "prereq"    : "E6",
+                        "id"        : "EA",
+                        "desc"      : "Spinning blades slice enemies who stray too close.",
+                        "synergies" : "E6E3",
+                        "position"  : 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name"  : "Necromancer",
+        "tree"  : [
+            {
+                "name" : "Summoning Spells",
+                "spell": [
+                    {
+                        "name"      : "Summon Mastery",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "F1",
+                        "desc"      : "Passive - Increases the strength of your summons and revives.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Raise Skeleton Warrior",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "F2",
+                        "desc"      : "Cast on the corpse of a slain monster, this raises a skeleton warrior that fights for you.",
+                        "synergies" : "F1",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Bone Offering",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "F3",
+                        "desc"      : "Consumes corpses to temporarily empower your party with toughness.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Clay Golem",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "F4",
+                        "desc"      : "Creates a golem from the earth to fight by your side.",
+                        "synergies" : "F1",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Flesh Offering",
+                        "levelreq"  : 12,
+                        "prereq"    : null,
+                        "id"        : "F5",
+                        "desc"      : "Consumes corpses to temporarily empower your party with swiftness.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Raise Skeletal Mage",
+                        "levelreq"  : 12,
+                        "prereq"    : "F2",
+                        "id"        : "F6",
+                        "desc"      : "Cast on the corpse of a slain monster, this raises a skeleton mage that fights for you.",
+                        "synergies" : "F3",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Blood Golem",
+                        "levelreq"  : 18,
+                        "prereq"    : "F4",
+                        "id"        : "F7",
+                        "desc"      : "Creates a golem that shares with you the life it steals.",
+                        "synergies" : "F1",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Convocation",
+                        "levelreq"  : 24,
+                        "prereq"    : null,
+                        "id"        : "F8",
+                        "desc"      : "Muster dark energies to warp you and your minions to a location.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Iron Golem",
+                        "levelreq"  : 24,
+                        "prereq"    : "F7",
+                        "id"        : "F9",
+                        "desc"      : "Transform a metallic item into a golem that gains the properties of the item.",
+                        "synergies" : "F1",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Fire Golem",
+                        "levelreq"  : 30,
+                        "prereq"    : "F9",
+                        "id"        : "FA",
+                        "desc"      : "Creates a golem that converts the damage it receives from fire into life.",
+                        "synergies" : "F1",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Revive",
+                        "levelreq"  : 30,
+                        "prereq"    : "F6",
+                        "id"        : "FB",
+                        "desc"      : "Returns a monster to life to fight by your side.",
+                        "synergies" : "F1",
+                        "position"  : 3
+                    }
+                ]
+            },
+            {
+                "name"  : "Poison and Bone Spells",
+                "spell": [
+                    {
+                        "name"      : "Deadly Poison",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "G1",
+                        "desc"      : "Coats your weapon in deadly poison and increases the potency of your poison skills. When active, poison damage delivered by your weapon always lasts for 2 seconds.",
+                        "synergies" : "G5G9",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Teeth",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "G2",
+                        "desc"      : "Fires a barrage of summoned barbed teeth.",
+                        "synergies" : "G6G8",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Bone Armor",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "G3",
+                        "desc"      : "Creates an orbiting shield of bone that absorbs melee damage.",
+                        "synergies" : "G7G8",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Corpse Explosion",
+                        "levelreq"  : 12,
+                        "prereq"    : "G3",
+                        "id"        : "G4",
+                        "desc"      : "Cast on the corpse of a slain monster, it explodes, damaging nearby enemies.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Desecrate",
+                        "levelreq"  : 18,
+                        "prereq"    : "G1",
+                        "id"        : "G5",
+                        "desc"      : "Summons a pile of rotten corpses that release toxic fumes.",
+                        "synergies" : "G1G9",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Bone Spear",
+                        "levelreq"  : 18,
+                        "prereq"    : "G2",
+                        "id"        : "G6",
+                        "desc"      : "Summons a deadly spike of bone to impale your enemies.",
+                        "synergies" : "G2G8",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Bone Wall",
+                        "levelreq"  : 18,
+                        "prereq"    : "G4",
+                        "id"        : "G7",
+                        "desc"      : "Creates an impassable barrier of bone and debris.",
+                        "synergies" : "G3",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Bone Spirit",
+                        "levelreq"  : 24,
+                        "prereq"    : "G6G7",
+                        "id"        : "G8",
+                        "desc"      : "Releases a spirit of the restless undead that tracks its target or finds one of its own.",
+                        "synergies" : "G6G2",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Poison Nova",
+                        "levelreq"  : 30,
+                        "prereq"    : "G5",
+                        "id"        : "G9",
+                        "desc"      : "Emits an expanding ring of concentrated poison.",
+                        "synergies" : "G5G1",
+                        "position"  : 1
+                    }
+                ]
+            },
+            {
+                "name"  : "Curses",
+                "spell": [
+                    {
+                        "name"      : "Amplify Damage",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "H1",
+                        "desc"      : "Curses a group of enemies, increasing the non-magic damage they receive.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Dim Vision",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "H2",
+                        "desc"      : "Curses a group of monsters, reducing their vision radius.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Hemorrhage",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "H3",
+                        "desc"      : "Curses a group of enemies to cause bleeding which drains their life away (ignores curse overrides/immunities)",
+                        "synergies" : "H8H4H5",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Weaken",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "H4",
+                        "desc"      : "Curses a group of enemies, reducing the amount of damage they inflict.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Iron Maiden",
+                        "levelreq"  : 12,
+                        "prereq"    : null,
+                        "id"        : "H5",
+                        "desc"      : "Curses a group of enemies, causing them to damage themselves when damaging others.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Terror",
+                        "levelreq"  : 12,
+                        "prereq"    : null,
+                        "id"        : "H6",
+                        "desc"      : "Curses a group of monsters, causing them to flee in terror.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Confuse",
+                        "levelreq"  : 18,
+                        "prereq"    : null,
+                        "id"        : "H7",
+                        "desc"      : "Curses a monster to force it to attack random targets.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Life Tap",
+                        "levelreq"  : 18,
+                        "prereq"    : null,
+                        "id"        : "H8",
+                        "desc"      : "Curses a group of monsters so that damaging them gives the attacker life.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Attract",
+                        "levelreq"  : 24,
+                        "prereq"    : null,
+                        "id"        : "H9",
+                        "desc"      : "Curses a monster to become the target of all nearby monsters. This curse may not be overridden by another curse.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Decrepify",
+                        "levelreq"  : 24,
+                        "prereq"    : null,
+                        "id"        : "HA",
+                        "desc"      : "Curses a group of enemies to make them slow, weak and take amplified damage.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Lower Resist",
+                        "levelreq"  : 30,
+                        "prereq"    : null,
+                        "id"        : "HB",
+                        "desc"      : "Curses an enemy to take more damage from all magical attacks. Lowers resistances of monsters. Lowers maximum resistances of hostile players.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name"  : "Barbarian",
+        "tree"  : [
+            {
+                "name" : "Warcries",
+                "spell": [
+                    {
+                        "name"      : "Howl",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "I1",
+                        "desc"      : "Sends nearby monsters scrambling away in fear.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Find Potion",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "I2",
+                        "desc"      : "Use on the corpse of a slain monster for a chance to find a potion.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Taunt",
+                        "levelreq"  : 6,
+                        "prereq"    : "I1",
+                        "id"        : "I3",
+                        "desc"      : "Enrages a monster into relentlessly attacking.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Shout",
+                        "levelreq"  : 6,
+                        "prereq"    : "I1",
+                        "id"        : "I4",
+                        "desc"      : "Warns of impending danger and improves the defense rating of you and your party.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Find Item",
+                        "levelreq"  : 12,
+                        "prereq"    : "I2",
+                        "id"        : "I5",
+                        "desc"      : "Use on the corpse of a slain monster to find hidden treasures.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Battle Cry",
+                        "levelreq"  : 18,
+                        "prereq"    : "I3",
+                        "id"        : "I6",
+                        "desc"      : "Fearsome cry that decreases enemies' defense rating and damage.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Battle Orders",
+                        "levelreq"  : 24,
+                        "prereq"    : "I4",
+                        "id"        : "I7",
+                        "desc"      : "Improves the maximum mana, life and stamina of you and your party.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Grim Ward",
+                        "levelreq"  : 24,
+                        "prereq"    : "I5",
+                        "id"        : "I8",
+                        "desc"      : "Turn a corpse into a horrifying totem, decreasing the physical resistance of nearby enemies.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "War Cry",
+                        "levelreq"  : 30,
+                        "prereq"    : "I6I7",
+                        "id"        : "I9",
+                        "desc"      : "Injures and stuns all nearby enemies.",
+                        "synergies" : "I3I6",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Battle Command",
+                        "levelreq"  : 30,
+                        "prereq"    : "I7",
+                        "id"        : "IA",
+                        "desc"      : "Increases all current skill levels for you and your party.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    }
+                ]
+            },
+            {
+                "name" : "Combat Masteries",
+                "spell": [
+                    {
+                        "name"      : "Edged Weapon Mastery",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "J1",
+                        "desc"      : "Passive - Improves fighting ability with swords, axes and daggers.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Pole Weapon Mastery",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "J2",
+                        "desc"      : "Passive - Improves fighting ability with polearms and spears.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Blunt Weapon Mastery",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "J3",
+                        "desc"      : "Passive - Improves fighting ability with maces, clubs and staves.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Throwing Weapon Mastery",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "J4",
+                        "desc"      : "Passive - Improves thrown weapon fighting skill",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Increased Stamina",
+                        "levelreq"  : 12,
+                        "prereq"    : null,
+                        "id"        : "J5",
+                        "desc"      : "Passive - Increases your stamina.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Iron Skin",
+                        "levelreq"  : 18,
+                        "prereq"    : null,
+                        "id"        : "J6",
+                        "desc"      : "Passive - Improves defense rating.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Increased Speed",
+                        "levelreq"  : 24,
+                        "prereq"    : "J5",
+                        "id"        : "J7",
+                        "desc"      : "Passive - Increases walk and run speed.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Natural Resistance",
+                        "levelreq"  : 30,
+                        "prereq"    : "J6",
+                        "id"        : "J8",
+                        "desc"      : "Passive - Increases natural resistances to elemental and poison damage.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    }
+                ]
+            },
+            {
+                "name" : "Combat Skills",
+                "spell": [
+                    {
+                        "name"      : "Frenzy",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "K1",
+                        "desc"      : "Allows you to swing two weapons at once. Each successful attack increases your overall speed. Requires you to equip two weapons.",
+                        "synergies" : "K3K2K7",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Concentrate",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "K2",
+                        "desc"      : "Attack that is not interruptible and improves attack and defense rating.",
+                        "synergies" : "K7I7I3",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Cleave",
+                        "levelreq"  : 6,
+                        "prereq"    : "K1",
+                        "id"        : "K3",
+                        "desc"      : "Attacks in an arc, dealing damage to all enemies caught in the swing.",
+                        "synergies" : "K1",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Stun",
+                        "levelreq"  : 12,
+                        "prereq"    : "K1",
+                        "id"        : "K4",
+                        "desc"      : "Stuns your target for a short time and increases your attack rating.",
+                        "synergies" : "K2K7I9",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Leap",
+                        "levelreq"  : 12,
+                        "prereq"    : "K3",
+                        "id"        : "K5",
+                        "desc"      : "Leaps away from danger or into the fray.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Power Throw",
+                        "levelreq"  : 18,
+                        "prereq"    : "K2",
+                        "id"        : "K6",
+                        "desc"      : "Gathers momentum to unleash a powerful throw that deals damage to the target and nearby enemies.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Bash",
+                        "levelreq"  : 18,
+                        "prereq"    : "K4",
+                        "id"        : "K7",
+                        "desc"      : "Powerful blow that converts physical damage to magic and knocks back enemies.",
+                        "synergies" : "K4K2",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Leap Attack",
+                        "levelreq"  : 24,
+                        "prereq"    : "K5",
+                        "id"        : "K8",
+                        "desc"      : "Leaps to and attacks target enemy in one swift assault.",
+                        "synergies" : "K5",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Ethereal Throw",
+                        "levelreq"  : 30,
+                        "prereq"    : "K7K6",
+                        "id"        : "K9",
+                        "desc"      : "Throw your weapon with tremendous force, converting it into a burst of energy that explodes upon impact.",
+                        "synergies" : "K7K6",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Whirlwind",
+                        "levelreq"  : 30,
+                        "prereq"    : "K7",
+                        "id"        : "KA",
+                        "desc"      : "A whirling dance of death that cuts a path through the legions of your enemies.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name"  : "Sorceress",
+        "tree"  : [
+            {
+                "name" : "Cold Spells",
+                "spell": [
+                    {
+                        "name"      : "Ice Bolt",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "L1",
+                        "desc"      : "Creates a magical bolt of ice that damage and slows your enemies.",
+                        "synergies" : "LBL2L3L5",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Frigerate",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "L2",
+                        "desc"      : "Chills equipped weapon of targeted character or minion. Adds cold damage to weapons.",
+                        "synergies" : "LBL5",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Frost Nova",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "L3",
+                        "desc"      : "Creates an expanding ring of ice that damages and slows all nearby enemies.",
+                        "synergies" : "LBL4L5",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Ice Blast",
+                        "levelreq"  : 6,
+                        "prereq"    : "L1",
+                        "id"        : "L4",
+                        "desc"      : "Creates a magical sphere of ice that damages and freezes your enemy.",
+                        "synergies" : "LBL1L6L7",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Shiver Armor",
+                        "levelreq"  : 12,
+                        "prereq"    : "L4L2",
+                        "id"        : "L5",
+                        "desc"      : "Increases your defense rating. Freezes and damages enemies that hit you.",
+                        "synergies" : "LBL2",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Glacial Spike",
+                        "levelreq"  : 18,
+                        "prereq"    : "L4",
+                        "id"        : "L6",
+                        "desc"      : "Creates a magical ice comet that freezes or kills nearby enemies.",
+                        "synergies" : "LBL1L4L8LAL7",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Blizzard",
+                        "levelreq"  : 24,
+                        "prereq"    : "L6L3",
+                        "id"        : "L7",
+                        "desc"      : "Summons massive shards of ice to destroy your enemies.",
+                        "synergies" : "",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Freezing Pulse",
+                        "levelreq"  : 24,
+                        "prereq"    : "L6",
+                        "id"        : "L8",
+                        "desc"      : "A powerful pulse of freezing air that passes through enemies, slowing and damaging them.",
+                        "synergies" : "LBL6L1L4",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Chilling Armor",
+                        "levelreq"  : 24,
+                        "prereq"    : "L5",
+                        "id"        : "L9",
+                        "desc"      : "Increases defense and discharges an ice bolt in retaliation against ranged attackers.",
+                        "synergies" : "LBL1",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Frozen Orb",
+                        "levelreq"  : 30,
+                        "prereq"    : "L7",
+                        "id"        : "LA",
+                        "desc"      : "Creates a magical globe that sprays a torrent of ice bolts to lay waste to your enemies.",
+                        "synergies" : "LBL1",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Cold Mastery",
+                        "levelreq"  : 30,
+                        "prereq"    : null,
+                        "id"        : "LB",
+                        "desc"      : "Passive - Increases the damage of your cold attacks by piercing enemies' resistances to cold.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    }
+                ]
+            },
+            {
+                "name" : "Lightning Spells",
+                "spell": [
+                    {
+                        "name"      : "Charged Bolt",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "M1",
+                        "desc"      : "Creates multiple, randomly directed bolts of electrical energy.",
+                        "synergies" : "MAM5M6",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Static Field",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "M2",
+                        "desc"      : "Creates an electrical field that reduces life of all nearby enemies.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Telekinesis",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "M3",
+                        "desc"      : "Uses the power of your mind to pick up items, use objects, and knockback enemies.",
+                        "synergies" : "MA",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Nova",
+                        "levelreq"  : 12,
+                        "prereq"    : "M2",
+                        "id"        : "M4",
+                        "desc"      : "Creates an expanding ring of lightning to shock nearby enemies.",
+                        "synergies" : "MAM8",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Lightning Surge",
+                        "levelreq"  : 12,
+                        "prereq"    : "M1",
+                        "id"        : "M5",
+                        "desc"      : "Creates a powerful lightning bolt to lay waste to your enemies.",
+                        "synergies" : "MAM1M6",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Chain Lightning",
+                        "levelreq"  : 18,
+                        "prereq"    : "M5",
+                        "id"        : "M6",
+                        "desc"      : "Creates a bolt of lightning that arcs through several targets.",
+                        "synergies" : "M5MAM1",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Teleport",
+                        "levelreq"  : 18,
+                        "prereq"    : "M3",
+                        "id"        : "M7",
+                        "desc"      : "Instantly moves to a destination within your line of sight.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Discharge",
+                        "levelreq"  : 24,
+                        "prereq"    : "M4",
+                        "id"        : "M8",
+                        "desc"      : "Unleashes a burst of electricity all around you.",
+                        "synergies" : "MAM4M2",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Energy Shield",
+                        "levelreq"  : 24,
+                        "prereq"    : "M7M6",
+                        "id"        : "M9",
+                        "desc"      : "Creates a magical shield that consumes mana instead of health when you take damage.",
+                        "synergies" : "M3",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Lightning Mastery",
+                        "levelreq"  : 30,
+                        "prereq"    : null,
+                        "id"        : "MA",
+                        "desc"      : "Passive - Increases the damage of your lightning attacks by piercing enemies' resistances to lightning.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Thunder Storm",
+                        "levelreq"  : 30,
+                        "prereq"    : "",
+                        "id"        : "MB",
+                        "desc"      : "Summons a thunderstorm that periodically blasts a nearby enemy with a bolt of lightning.",
+                        "synergies" : "",
+                        "position"  : 3
+                    }
+                ]
+            },
+            {
+                "name" : "Fire Spells",
+                "spell": [
+                    {
+                        "name"      : "Fire Bolt",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "N1",
+                        "desc"      : "Creates a magical flaming missile.",
+                        "synergies" : "N9N5N8N6",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Warmth",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "N2",
+                        "desc"      : "Passive - Increases your chance to attack and the rate at which you recover mana.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Blaze",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "N3",
+                        "desc"      : "Your footsteps create areas of burning ground that damages enemies and heals you.",
+                        "synergies" : "N9N2N4",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Immolate",
+                        "levelreq"  : 12,
+                        "prereq"    : "N3",
+                        "id"        : "N4",
+                        "desc"      : "Creates a fiery blast in front of you engulfing enemies with intense heat.",
+                        "synergies" : "N9N2",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Fire Ball",
+                        "levelreq"  : 12,
+                        "prereq"    : "N1",
+                        "id"        : "N5",
+                        "desc"      : "Creates an explosive sphere of fiery death to engulf your enemies.",
+                        "synergies" : "N1N9N8",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Fire Wall",
+                        "levelreq"  : 18,
+                        "prereq"    : "N4",
+                        "id"        : "N6",
+                        "desc"      : "Creates a wall of flame that blocks of burns your enemies.",
+                        "synergies" : "N9N3N2",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Enflame",
+                        "levelreq"  : 18,
+                        "prereq"    : "N2N5",
+                        "id"        : "N7",
+                        "desc"      : "Enchants equipped weapon with fire damage.",
+                        "synergies" : "N9N2",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Meteor",
+                        "levelreq"  : 24,
+                        "prereq"    : "N6N5",
+                        "id"        : "N8",
+                        "desc"      : "Summons a meteor from the heavens to crush and incinerate your enemies.",
+                        "synergies" : "N9N1N5N3",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Fire Mastery",
+                        "levelreq"  : 30,
+                        "prereq"    : null,
+                        "id"        : "N9",
+                        "desc"      : "Passive - Increases the damage of your fire attacks by piercing enemies' resistances to fire.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Hydra",
+                        "levelreq"  : 30,
+                        "prereq"    : "N7",
+                        "id"        : "NA",
+                        "desc"      : "Summons a multi-headed beast of flame to reduce your enemies to ashes.",
+                        "synergies" : "N9N2N5",
+                        "position"  : 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name"  : "Druid",
+        "tree"  : [
+            {
+                "name" : "Elemental Skills",
+                "spell": [
+                    {
+                        "name"      : "Firestorm",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "O1",
+                        "desc"      : "Unleash fiery chaos to burn your enemies.",
+                        "synergies" : "O5O2",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Molten Boulder",
+                        "levelreq"  : 6,
+                        "prereq"    : "O1",
+                        "id"        : "O2",
+                        "desc"      : "Launch a boulder of flaming hot magma that knocks back your enemies.",
+                        "synergies" : "O1O8",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Flame Dash",
+                        "levelreq"  : 6,
+                        "prereq"    : "O2",
+                        "id"        : "O3",
+                        "desc"      : "Instantly teleport to a location and unleash an fiery explosion that incinerates all enemies in your path.",
+                        "synergies" : "O2",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Arctic Blast",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "O4",
+                        "desc"      : "Blast a continuous jet of ice to burn your enemies with frost.",
+                        "synergies" : "OBO6",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Fissure",
+                        "levelreq"  : 12,
+                        "prereq"    : "O2",
+                        "id"        : "O5",
+                        "desc"      : "Open volcanic vents below your enemies, burning them to a crisp.",
+                        "synergies" : "O1O8",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Cyclone Armor",
+                        "levelreq"  : 12,
+                        "prereq"    : "O4",
+                        "id"        : "O6",
+                        "desc"      : "Shield yourself from damage caused by fire, cold, and lightning.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Twister",
+                        "levelreq"  : 18,
+                        "prereq"    : "O6",
+                        "id"        : "O7",
+                        "desc"      : "Release several small whirlwinds that cut a path through your enemies.",
+                        "synergies" : "O9OB",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Volcano",
+                        "levelreq"  : 24,
+                        "prereq"    : "O5",
+                        "id"        : "O8",
+                        "desc"      : "Summon forth a volcano to rain death and destruction over your enemies.",
+                        "synergies" : "O2O5OA",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Tornado",
+                        "levelreq"  : 24,
+                        "prereq"    : "O7",
+                        "id"        : "O9",
+                        "desc"      : " Create a funnel of wind and debris to blast your enemies.",
+                        "synergies" : "O7OBO6",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Armageddon",
+                        "levelreq"  : 30,
+                        "prereq"    : "O8",
+                        "id"        : "OA",
+                        "desc"      : "Create a meteor shower to rain fiery destruction on nearby enemies.",
+                        "synergies" : "O2O8O5O1",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Hurricane",
+                        "levelreq"  : 30,
+                        "prereq"    : "O9",
+                        "id"        : "OB",
+                        "desc"      : "Create a massive storm of wind and debris to pound your enemies to bits.",
+                        "synergies" : "O7O9O6O4",
+                        "position"  : 2
+                    }
+                ]
+            },
+            {
+                "name" : "Shape Shifting Skills",
+                "spell": [
+                    {
+                        "name"      : "Werewolf",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "P1",
+                        "desc"      : "Transform into a werewolf.",
+                        "synergies" : "P2",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Lycanthropy",
+                        "levelreq"  : 1,
+                        "prereq"    : "P1",
+                        "id"        : "P2",
+                        "desc"      : "Passive - Improves damage and life when in werewolf or werebear form.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Werebear",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "P3",
+                        "desc"      : "Transform into a werebear.",
+                        "synergies" : "P2",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Feral Rage",
+                        "levelreq"  : 12,
+                        "prereq"    : "P1",
+                        "id"        : "P4",
+                        "desc"      : "When in werewolf form, go into a frenzied rage to steal increasing amounts of life from your enemies with successive hits.",
+                        "synergies" : "",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Maul",
+                        "levelreq"  : 12,
+                        "prereq"    : "P3",
+                        "id"        : "P5",
+                        "desc"      : "When in werebear form, maul your enemies for increasing extra damage with successive hits.",
+                        "synergies" : "",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Rabies",
+                        "levelreq"  : 18,
+                        "prereq"    : "P4",
+                        "id"        : "P6",
+                        "desc"      : "When in werewolf form, bite your enemies to inflict them with disease that spreads to other monsters.",
+                        "synergies" : "Q2Q7",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Fire Claws",
+                        "levelreq"  : 18,
+                        "prereq"    : "P5P4",
+                        "id"        : "P7",
+                        "desc"      : "When in werewolf or werebear form, maul your enemies with a fiery claw attack.",
+                        "synergies" : "O1O2O5O8",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Hunger",
+                        "levelreq"  : 24,
+                        "prereq"    : "P7",
+                        "id"        : "P8",
+                        "desc"      : "When in werewolf or werebear form, bite your enemies to gain life and mana.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Shock Wave",
+                        "levelreq"  : 24,
+                        "prereq"    : "P5",
+                        "id"        : "P9",
+                        "desc"      : "When in werebear form, stomp to create a shock wave that crushes enemies.",
+                        "synergies" : "P5",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Fury",
+                        "levelreq"  : 30,
+                        "prereq"    : "P6",
+                        "id"        : "PA",
+                        "desc"      : "When in werewolf form, attack either multiple adjacent targets or one target multiple times.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    }
+                ]
+            },
+            {
+                "name" : "Summoning Skills",
+                "spell": [
+                    {
+                        "name"      : "Raven",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "Q1",
+                        "desc"      : "Summon ravens to peck out the eyes of your enemies.",
+                        "synergies" : "O6O7O4",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Poison Creeper",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "Q2",
+                        "desc"      : "Summon a vine that spreads disease to all it contacts.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Heart of Wolverine",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "Q3",
+                        "desc"      : "Summon a spirit pet that adds to the damage and attack rating of you and your party.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Summon Spirit Wolf",
+                        "levelreq"  : 6,
+                        "prereq"    : "Q1",
+                        "id"        : "Q4",
+                        "desc"      : "Summon a wolf to fight by your side.",
+                        "synergies" : "Q7QA",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Carrion Vine",
+                        "levelreq"  : 12,
+                        "prereq"    : "Q2",
+                        "id"        : "Q5",
+                        "desc"      : "Summon a vine that eats corpses and replenishes your life.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Oak Sage",
+                        "levelreq"  : 18,
+                        "prereq"    : "Q3",
+                        "id"        : "Q6",
+                        "desc"      : "Summon a spirit pet that increases life for you and your party.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Summon Dire Wolf",
+                        "levelreq"  : 18,
+                        "prereq"    : "Q4Q3",
+                        "id"        : "Q7",
+                        "desc"      : "Summon a wold that becomes enraged, eating corpses to increase its damage.",
+                        "synergies" : "Q4QA",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Solar Creeper",
+                        "levelreq"  : 24,
+                        "prereq"    : "Q5",
+                        "id"        : "Q8",
+                        "desc"      : "Summon a vine that eats corpses and replenishes your mana.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Spirit of Barbs",
+                        "levelreq"  : 30,
+                        "prereq"    : "Q6",
+                        "id"        : "Q9",
+                        "desc"      : "Summon a spirit pet that reflects damage taken by you and your party back at your enemies.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Summon Grizzly",
+                        "levelreq"  : 30,
+                        "prereq"    : "Q7",
+                        "id"        : "QA",
+                        "desc"      : "Summon a ferocious grizzly bear.",
+                        "synergies" : "Q4Q7",
+                        "position"  : 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name"  : "Paladin",
+        "tree"  : [
+            {
+                "name" : "Defensive Auras",
+                "spell": [
+                    {
+                        "name"      : "Prayer",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "R1",
+                        "desc"      : "When active, aura slowly regenerates the life of you and your party.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Resist Fire",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "R2",
+                        "desc"      : "When active, aura decreases fire damage done to you and your party.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Defiance",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "R3",
+                        "desc"      : "When active, aura increases the defense rating of you and your party.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Resist Cold",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "R4",
+                        "desc"      : "When active, aura decreases cold damage done to you and your party.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Cleansing",
+                        "levelreq"  : 12,
+                        "prereq"    : "R1",
+                        "id"        : "R5",
+                        "desc"      : "When active, aura reduces the length of time you and your party will remain poisoned or cursed.",
+                        "synergies" : "R1",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Resist Lightning",
+                        "levelreq"  : 12,
+                        "prereq"    : null,
+                        "id"        : "R6",
+                        "desc"      : "When active, aura decreases lightning damage done to you and your party.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Vigor",
+                        "levelreq"  : 18,
+                        "prereq"    : "R5R3",
+                        "id"        : "R7",
+                        "desc"      : "When active, aura increases stamina recovery rate, maximum stamina and movement speed for you and your party.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Meditation",
+                        "levelreq"  : 24,
+                        "prereq"    : "R5",
+                        "id"        : "R8",
+                        "desc"      : "When active, aura increases mana recovery for you and your party.",
+                        "synergies" : "R1",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Redemption",
+                        "levelreq"  : 30,
+                        "prereq"    : "R7",
+                        "id"        : "R9",
+                        "desc"      : "When active, aura attempts to redeem the souls of slain enemies to give you life and mana.",
+                        "synergies" : "0",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Salvation",
+                        "levelreq"  : 30,
+                        "prereq"    : null,
+                        "id"        : "RA",
+                        "desc"      : "When active, aura increases the elemental resistances and damage of you and your party.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    }
+                ]
+            },
+            {
+                "name" : "Offensive Auras",
+                "spell": [
+                    {
+                        "name"      : "Might",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "S1",
+                        "desc"      : "When active, aura increases the damage done by you and your party.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Holy Fire",
+                        "levelreq"  : 6,
+                        "prereq"    : "S1",
+                        "id"        : "S2",
+                        "desc"      : "When active, aura damages nearby enemies with heavenly flames.",
+                        "synergies" : "R2RA",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Precision",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "S3",
+                        "desc"      : "When active, increases your chance to attack, pierce and deal double damage.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Blessed Aim",
+                        "levelreq"  : 12,
+                        "prereq"    : "S1",
+                        "id"        : "S4",
+                        "desc"      : "When active, aura increases the attack rating for you and your party.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Concentration",
+                        "levelreq"  : 18,
+                        "prereq"    : "S4",
+                        "id"        : "S5",
+                        "desc"      : "When active, aura increases the damage and decreases the chance that the attack will be interrupted for you and your party.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Holy Freeze",
+                        "levelreq"  : 18,
+                        "prereq"    : "S2",
+                        "id"        : "S6",
+                        "desc"      : "When active, aura freezes nearby monsters.",
+                        "synergies" : "R4RA",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Holy Shock",
+                        "levelreq"  : 24,
+                        "prereq"    : "S6",
+                        "id"        : "S7",
+                        "desc"      : "When active, aura causes pulses of electricity to damage nearby enemies. Adds lightning damage to your attack.",
+                        "synergies" : "RAR6",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Sanctuary",
+                        "levelreq"  : 24,
+                        "prereq"    : "S6S3",
+                        "id"        : "S8",
+                        "desc"      : "When active, aura deals magic damage to nearby enemies and increases your damage against undead.",
+                        "synergies" : "R5TB",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Fanaticism",
+                        "levelreq"  : 30,
+                        "prereq"    : "S5",
+                        "id"        : "S9",
+                        "desc"      : "When active, aura increases damage, attack speed and attack rating for you and your party.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Conviction",
+                        "levelreq"  : 30,
+                        "prereq"    : "S8",
+                        "id"        : "SA",
+                        "desc"      : "When active, aura reduces defenses and resistances of nearby enemies.",
+                        "synergies" : "0",
+                        "position"  : 3
+                    }
+                ]
+            },
+            {
+                "name" : "Combat Skills",
+                "spell": [
+                    {
+                        "name"      : "Sacrifice",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "T1",
+                        "desc"      : "Increased accuracy and damage at the cost of life.",
+                        "synergies" : "S9R9",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Smite",
+                        "levelreq"  : 1,
+                        "prereq"    : null,
+                        "id"        : "T2",
+                        "desc"      : "Temporarily stun your enemy by bashing it with your shield.",
+                        "synergies" : "R3",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Holy Bolt",
+                        "levelreq"  : 6,
+                        "prereq"    : null,
+                        "id"        : "T3",
+                        "desc"      : "A bolt of divine energy that damages enemies or heals allies.",
+                        "synergies" : "TAS8R1",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Zeal",
+                        "levelreq"  : 12,
+                        "prereq"    : "T1",
+                        "id"        : "T4",
+                        "desc"      : "Allows you to attack multiple adjacent enemies with a single attack.",
+                        "synergies" : "T1",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Charge",
+                        "levelreq"  : 12,
+                        "prereq"    : "T2",
+                        "id"        : "T5",
+                        "desc"      : "Charge into battle and attack an enemy.",
+                        "synergies" : "R7S1",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Vengeance",
+                        "levelreq"  : 18,
+                        "prereq"    : "T4",
+                        "id"        : "T6",
+                        "desc"      : "Convert your based physical weapon damage into additional Fire, lightning and cold damage to each successful attack.",
+                        "synergies" : "R2R4R6RA",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Blessed Hammer",
+                        "levelreq"  : 18,
+                        "prereq"    : "T3",
+                        "id"        : "T7",
+                        "desc"      : "Summons an ethereal hammer that spirals outwards damaging enemies it hits.",
+                        "synergies" : "R7S4",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Conversion",
+                        "levelreq"  : 24,
+                        "prereq"    : "T6",
+                        "id"        : "T8",
+                        "desc"      : "Converts monsters to fight against other foul demons and beasts.",
+                        "synergies" : "0",
+                        "position"  : 1
+                    },
+                    {
+                        "name"      : "Holy Shield",
+                        "levelreq"  : 24,
+                        "prereq"    : "T7T5",
+                        "id"        : "T9",
+                        "desc"      : "Enhances your shield with divine power.",
+                        "synergies" : "R3",
+                        "position"  : 3
+                    },
+                    {
+                        "name"      : "Fist of the Heavens",
+                        "levelreq"  : 30,
+                        "prereq"    : "T8T7",
+                        "id"        : "TA",
+                        "desc"      : "Lightning strikes your target as holy bolts seek out nearby enemies.",
+                        "synergies" : "T3S7",
+                        "position"  : 2
+                    },
+                    {
+                        "name"      : "Dashing Strike",
+                        "levelreq"  : 30,
+                        "prereq"    : "T9",
+                        "id"        : "TB",
+                        "desc"      : "Instantly dash forward to the target enemy or ally stunning and damaging enemies nearby.",
+                        "synergies" : "T2T5T9",
+                        "position"  : 3
+                    }
+                ]
+            }
+        ]
+    }
+]

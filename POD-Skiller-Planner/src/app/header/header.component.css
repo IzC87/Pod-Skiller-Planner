@@ -1,0 +1,25 @@
+.header {
+    height: 75px;
+    width: 100%;
+    background-color: #222121;
+    text-align: center;
+}
+.classes {
+    padding-top: 25px;
+}
+
+.class-link {
+    border: 1px solid #121111;
+    padding: 15px;
+    color: goldenrod;
+    font-size: 24px;
+}
+
+.home-link {
+    border: 1px solid #121111;
+    margin: 8px;
+    padding: 15px;
+    color: goldenrod;
+    font-size: 24px;
+    float: left;
+}

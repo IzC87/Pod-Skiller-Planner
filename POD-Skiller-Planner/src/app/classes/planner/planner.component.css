@@ -1,0 +1,72 @@
+.trees {
+  text-align: center;
+  display: grid;
+  width: 66%;
+  grid-template-areas:  'tree'
+                        'selectedskill';
+}
+
+.tree0 { grid-area: firsttreetitle; }
+.tree1 { grid-area: secondtreetitle; }
+.tree2 { grid-area: thirdtreetitle; }
+
+.tree0, .tree1, .tree2 {
+  font-size: 30px;
+  margin-top: 15px;
+  text-shadow: 2px 1px gray;
+}
+
+.selectedskill {
+  font-size: 18px;
+  grid-area: selectedskill;
+  text-align: left;
+  margin: 10px;
+  position: relative;
+}
+
+.resetbutton {
+  font-size: 18px;
+  position: absolute;
+  top: "5px";
+  right: "5px";
+}
+
+.tree {
+  grid-area: tree;
+  display: grid;
+  grid-template-areas:  'firsttreetitle secondtreetitle thirdtreetitle'
+                        'firsttree secondtree thirdtree';
+}
+
+.firsttree {
+  grid-area: firsttree;
+  display: grid;
+  grid-template-areas:
+      'firsttreetitle firsttreetitle firsttreetitle';
+  margin-top: 15px;
+  margin-right: 0;
+  grid-gap: 4px;
+  padding: 5px;
+}
+
+.secondtree {
+  grid-area: secondtree;
+  display: grid;
+  grid-template-areas:
+      'secondtreetitle secondtreetitle secondtreetitle';
+  margin-top: 15px;
+  margin-right: 0;
+  grid-gap: 4px;
+  padding: 5px;
+}
+
+.thirdtree {
+  grid-area: thirdtree;
+  display: grid;
+  grid-template-areas:
+      'thirdtreetitle thirdtreetitle thirdtreetitle';
+  margin-top: 15px;
+  margin-right: 0;
+  grid-gap: 4px;
+  padding: 5px;
+}
